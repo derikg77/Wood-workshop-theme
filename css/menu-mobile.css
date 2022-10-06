@@ -82,6 +82,7 @@ nav {
   }
   .mobile-menu {
     display: block;
+    z-index: 99999999999999999;
   }
 }
 
