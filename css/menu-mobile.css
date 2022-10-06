@@ -27,6 +27,7 @@ nav {
   padding: 60px;
   position: relative;
   z-index: 99999999999999999999999;
+ 
 }
 
 .nav-list {
@@ -36,6 +37,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   gap: 40px;
+ 
+
 }
 
 .nav-list li {
@@ -49,6 +52,8 @@ nav {
 .mobile-menu {
   display: none;
   cursor: pointer;
+  right: 0;
+  z-index: 9999999999999999999999999999;
 }
 
 .mobile-menu div {
@@ -65,7 +70,7 @@ nav {
     position: absolute;
     top: 8vh;
     right: 0;
-    max-width: 300px;
+    max-width: 400px;
     width: 100vw;
     height: 90vh;
     background: #f1eeea;
