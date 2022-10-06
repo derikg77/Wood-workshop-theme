@@ -1,0 +1,181 @@
+/* TRABALHO */
+.trabalho {
+  max-width: 1400px;
+  background-color: #eee8df;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.trabalho h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 3.7rem;
+  color: #343434;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.trabalho p {
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #343434;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.trabalho dt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding-top: 20px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.trabalho dt:hover {
+  color: #b69b74;
+  transition: 0.4s all ease;
+}
+.js-accordion dt::after {
+  content: "⬎";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  transition: 0.3s;
+}
+.js-accordion dt.ativo::after {
+  content: '⬏';
+}
+
+
+.trabalho img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+}
+.trabalho-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  gap: 60px;
+}
+.trabalho-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.js-accordion dd {
+  color: #343434;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.js-accordion dd {
+  display: none;
+}
+.js-accordion dd.ativo {
+  display: block !important;
+}
+.js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
+/* A maioria dos smartphones móveis */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .trabalho-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  .trabalho h1 {
+    min-width: 430px;
+    font-size: 2.4rem;
+    margin: 0 auto;
+    
+  }
+  .trabalho-container h1 {
+    text-align: center;
+    
+  }
+  .trabalho-container p {
+   text-align: center;
+   padding: 10px;
+  }
+  .trabalho-container ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .trabalho-links {
+    width: 100%;
+    padding: 10px;
+  }
+  .trabalho-container img {
+    text-align: justify;
+  }
+}
+/* Tablets de baixa resolução, celulares */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+ 
+  .trabalho-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .trabalho h1 {
+  
+    font-size: 2.4rem;
+    margin: 0 auto;
+  }
+  
+  .trabalho-container ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+/* Tablets, ipads */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .trabalho-container {
+    padding: 40px;
+  }
+}

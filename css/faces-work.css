@@ -1,0 +1,96 @@
+/* FACES WORKER*/
+.faces {
+  background-color: #f1eeea;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.title2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #b69b74;
+  font-size: 2.4rem;
+  padding-bottom: 20px;
+}
+.faces-container .face-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #343434;
+  padding-top: 20px;
+}
+.faces-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #343434;
+  padding-top: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.faces-container .email {
+  padding-bottom: 45px;
+}
+.faces-container .email::before {
+  content: "";
+  position: absolute;
+  background: #b69b74;
+  bottom: -1rem;
+  left: 50%;
+  width: 2px;
+  height: 3rem;
+}
+.faces-container .work {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #b69b74;
+  padding-top: 20px;
+}
+.faces-container img {
+  object-fit: cover;
+}
+.faces-container ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+.faces-container p {
+  width: 100%;
+  
+}
+/* A maioria dos smartphones móveis */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .faces-container ul {
+    flex-direction: column;
+  }
+
+  .faces-container ul img {
+    margin: 0 auto;
+  }
+}
+/* Tablets de baixa resolução, celulares */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .faces-container ul {
+    flex-direction: column;
+  }
+
+  .faces-container ul img {
+    margin: 0 auto;
+  }
+}
+/* Tablets, ipads */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .faces-container ul {
+    flex-direction: column;
+  }
+
+  .faces-container ul img {
+    margin: 0 auto;
+  }
+}

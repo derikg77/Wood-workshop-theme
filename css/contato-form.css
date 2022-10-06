@@ -1,0 +1,169 @@
+/* CONTATO FORMULARIO */
+
+.contato-formulario {
+  background: #f1eeea;
+}
+.contato-container {
+  padding-top: 200px;
+  height: 260px;
+}
+.contato-container h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #343434;
+  font-size: 2.4rem;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.contato-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #343434;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form-al {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 140px;
+}
+
+.form input[type="text"],
+input[type="email"],
+input[type="telefone"] {
+  width: 395px;
+  height: 65px;
+  padding: 0.5rem;
+  background-color: #f1eeea;
+  border: none;
+  border-bottom: 2px solid #343434;
+  border-radius: 0;
+  color: #343434;
+  transition: 0.4s;
+  box-shadow: none;
+  outline: none;
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.form label {
+  color: #343434;
+  padding-right: 10px;
+}
+
+.form .check   {
+   
+  padding-top: 40px;
+}
+
+.form textarea {
+  width: 395px;
+  height: 57px;
+  padding: 0.5rem;
+  background-color: #f1eeea;
+  border: none;
+  border-bottom: 2px solid #343434;
+  border-radius: 0;
+  color: #343434;
+  transition: 0.4s;
+  box-shadow: none;
+  outline: none;
+  margin-left: 95px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.col {
+  padding-top: 60px;
+  text-align: center;
+}
+.text-submit {
+  padding-top: 20px;
+  text-align: center;
+}
+.section,
+.bg-floresta {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  background-size: cover;
+}
+/* A maioria dos smartphones móveis */
+@media screen and (min-width: 320px) and (max-width: 580px) {
+  textarea {
+    margin-right: 90px;
+  }
+  .form-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .check {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 40px;
+   
+  }
+  .text-submit {
+    margin-top: 10px;
+    width: 100%;
+    min-width: 428px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+/* Tablets de baixa resolução, celulares */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  textarea {
+    margin-right: 90px;
+  }
+  .form-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .check {
+    padding-bottom: 40px;
+  }
+
+  .text-submit p {
+    text-align: center;
+    font-size: 0.75rem;
+    min-width: 428px;
+  }
+}
+/* Tablets, ipads */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .check {
+    padding-bottom: 40px;
+  }
+  textarea {
+    margin-right: 90px;
+  }
+  .text-submit p {
+    text-align: center;
+    font-size: 0.75rem;
+    min-width: 428px;
+  }
+}

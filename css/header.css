@@ -1,0 +1,71 @@
+/* HEADER */
+.header-bg {
+  background: #f1eeea;
+  
+}
+
+.dp-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+
+
+/* MENU DROPDOWN */
+.dp-menu ul {
+  background: #f1eeea;
+}
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.dp-menu ul li a {
+  color: #816843;
+  text-decoration: none;
+  display: inline-block;
+  text-align: left;
+  padding: 10px;
+  transition: background 0.2s;
+  position: relative;
+}
+
+.dp-menu ul li a:hover {
+  background: #f1eeea;
+  color: #c7aa81;
+}
+
+/* SUB MENU */
+
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+}
+
+.dp-menu ul ul {
+  width: 250px;
+  z-index: 1;
+}
+
+.dp-menu ul ul li a {
+  display: block;
+}
+/* A maioria dos smartphones móveis */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

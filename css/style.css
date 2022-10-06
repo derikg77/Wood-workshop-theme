@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import './header.css';
+@import './introducao.css';
+@import './menu-mobile.css';
+@import './sobre.css';
+@import './sobre-lista.css';
+@import './trabalho.css';
+@import './faces-work.css';
+@import './video-work.css';
+@import './contato-form.css';
+@import './footer.css';
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body,
+html {
+  width: 100vw !important; 
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  
+  display: block;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+button {
+  border: none;
+}
+
+/* BOTAO */
+.botao1 {
+  /* min-width: 145px; */
+  /* height: 45px; */
+  display: flex;
+  padding: 10px 35px;
+  color: #816843;
+  border: solid 2px #816843;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: 1s all ease;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.botao1:hover {
+  background-color: #816843;
+  font-weight: bold;
+  color: #fff;
+}
+.botao2 {
+  min-width: 150px;
+  height: 45px;
+  display: inline-flex;
+  padding: 12px 35px;
+  color: #816843;
+  border: solid 2px #816843;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: 1s all ease;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.botao2:hover {
+  background-color: #816843;
+  font-weight: bold;
+  color: #fff;
+}
+#main {
+  margin: 0 auto;
+}
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Medias */
+/* Segui de base sempre esse, se possivel copiar e colar */
+
+/* A maioria dos smartphones móveis */
+/* @media screen and (min-width: 320px) and (max-width: 480px) {
+  
+} */
+
+/* Tablets de baixa resolução, celulares */
+/* @media screen and (min-width: 481px) and (max-width: 767px) {
+ 
+} */
+/* Tablets, ipads */
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+} */
+/* Laptops, desktops */
+/* @media screen and (min-width: 1025px) and (max-width: 1280px) {
+ 
+} */
+/* Desktops */
+/* @media screen and (min-width: 1281px) {
+} */

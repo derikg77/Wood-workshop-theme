@@ -1,0 +1,67 @@
+/* SOBRE LISTA */
+
+.sobre-lista {
+  background: #f1eeea;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.sobre-lista h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #343434;
+}
+.sobre-lista p {
+  width: 90%;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 1.6;
+  color: #767676;
+  font-size: 1.2rem;
+}
+.sobre-lista img {
+  margin: 0 auto;
+}
+.sobre-lista ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+/* A maioria dos smartphones móveis */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .sobre-lista ul {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 100px;
+  }
+}
+/* Tablets de baixa resolução, celulares */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  
+  .sobre-lista ul {
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: center;
+    margin-top: 170px;
+    
+    
+  }
+  .sobre-lista p {
+    justify-content:  space-around;
+    align-items: center;
+  }
+}
+/* Tablets, ipads */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+}

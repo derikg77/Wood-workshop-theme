@@ -1,0 +1,131 @@
+
+/* INTRODUCAO-CONTEUDO */
+.introducao {
+  background: #f1eeea;
+}
+.introducao-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #343434;
+  padding: 40px;
+  gap: 40px;
+}
+.introducao-title {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+}
+.sub-title {
+  font-weight: 300;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.text p {
+  width: 90%;
+  padding-bottom: 20px;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  padding-right: 6rem;
+  position: relative;
+  object-fit: cover;
+}
+.bg-1 img {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+}
+.img-1 {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  right: -20%;
+  left: 40%;
+  top: 67%;
+
+}
+/* REDES INTRODUCAO */
+
+.redes-introducao {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 40px;
+}
+
+.redes-introducao {
+  font-size: 1.8rem;
+}
+
+.ri-facebook-fill {
+  color: #343434;
+}
+.ri-instagram-line {
+  color: #343434;
+}
+.title-about {
+  min-width: 100px;
+  display: block;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  color: #343434;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 120px;
+  margin-bottom: 160px;
+  position: relative;
+}
+
+.title-about::before {
+  content: "";
+  position: absolute;
+  background: currentColor;
+  top: 43%;
+  left: -7rem;
+  width: 100px;
+  height: 2px;
+}
+/* A maioria dos smartphones móveis */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .introducao-conteudo {
+    flex-direction: column;
+  }
+  .redes-introducao {
+    display: none;
+  }
+  .images {
+    padding: 20px;
+  }
+}
+/* Tablets de baixa resolução, celulares */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .introducao-conteudo {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .redes-introducao {
+    display: none;
+  }
+  .images {
+    padding: 20px;
+  }
+  
+}
+/* Tablets, ipads */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .introducao-conteudo {
+    flex-direction: column;
+  }
+  .images {
+    padding: 20px;
+  } 
+}

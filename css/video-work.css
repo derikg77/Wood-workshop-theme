@@ -1,0 +1,91 @@
+/* VIDEO WORKER*/
+
+.video-work {
+  background-color: #eee8df;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.video-container .title-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  color: #343434;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.video-img  {
+  
+  background: #cebfaf;
+  opacity: 0.6;
+}
+
+.video-container .view2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #b69b74;
+  font-size: 1.2rem;
+  padding-top: 20px;
+}
+.view2::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("/icones/seta.svg");
+  transition: transform 0.2s;
+}
+.view2:hover::after {
+  transform: translateX(4px);
+}
+.work-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  color: #343434;
+  text-align: center;
+  padding-top: 20px;
+}
+.video-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+.img-bg {
+  background-color: #eee8df;
+  padding-top: 40px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* A maioria dos smartphones móveis */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .video-work ul {
+    flex-direction: column;
+  }
+}
+/* Tablets de baixa resolução, celulares */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .video-work ul {
+    flex-direction: column;
+  }
+  
+}
+/* Tablets, ipads */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .video-work ul {
+    flex-direction: column;
+  }
+}
