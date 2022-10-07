@@ -88,11 +88,13 @@ nav {
   .mobile-menu {
     display: block;
     z-index: 99999999999999999;
+    cursor: pointer;
   }
 }
 
 .nav-list.active {
   transform: translateX(0);
+  
 }
 
 @keyframes navLinkFade {

@@ -7,6 +7,7 @@ class MobileNavbar {
     this.activeClass = "active";
 
     this.handleClick = this.handleClick.bind(this);
+    
   }
 
   animateLinks() {
@@ -18,15 +19,23 @@ class MobileNavbar {
           }s`);
     });
   }
-
+  // addBlur() {
+  //   document.querySelector('.main').style.filter = `blur(4px)` ?
+  //   document.querySelector('.main').style.filter = `blur(4px)` :
+  //   document.querySelector('.main').style.filter = '';
+  // }
   handleClick() {
+    // this.addBlur();
     this.navList.classList.toggle(this.activeClass);
     this.mobileMenu.classList.toggle(this.activeClass);
+    document.body.style.overflowY != "hidden" ? document.body.style.overflowY = "hidden" : 
+    document.body.style.overflowY = ""
     this.animateLinks();
   }
 
   addClickEvent() {
     this.mobileMenu.addEventListener("click", this.handleClick);
+    
   }
 
   init() {
@@ -50,6 +59,7 @@ function accordion() {
   const accordionList = document.querySelectorAll('.js-accordion dt');
   const activeClass = 'ativo';
   
+  
   if(accordionList.length) {
     function activeAccordion() {
       this.classList.toggle(activeClass);
@@ -58,6 +68,7 @@ function accordion() {
 
     accordionList.forEach((item) => {
       item.addEventListener('click', activeAccordion);
+    
     });
   }
 }

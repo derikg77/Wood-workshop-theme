@@ -84,7 +84,7 @@ button {
   font-weight: bold;
   color: #fff;
 }
-#main {
+.main {
   margin: 0 auto;
 }
 .js .js-scroll {
