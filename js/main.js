@@ -28,8 +28,8 @@ class MobileNavbar {
     // this.addBlur();
     this.navList.classList.toggle(this.activeClass);
     this.mobileMenu.classList.toggle(this.activeClass);
-    document.body.style.overflowY != "hidden" ? document.body.style.overflowY = "hidden" : 
-    document.body.style.overflowY = ""
+    document.body.style.overflowX != "hidden" ? document.body.style.overflowX = "hidden" : 
+    document.body.style.overflowX = ""
     this.animateLinks();
   }
 
